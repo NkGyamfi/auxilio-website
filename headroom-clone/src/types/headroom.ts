@@ -1,3 +1,14 @@
+export const HERO_CAROUSEL_WORDS = [
+  "AI",
+  "software",
+  "systems",
+  "workflows",
+  "agents",
+  "automations",
+  "computers",
+  "Headroom",
+] as const;
+
 export interface NavMenuLink {
   label: string;
   href: string;
