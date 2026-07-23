@@ -31,7 +31,39 @@ export function HeroSection() {
               You built your business by hand.
             </span>
             <span className="relative mx-auto mt-4 block max-w-[20ch] overflow-visible !text-[26px] font-normal leading-[1.15] tracking-[-0.02em] sm:mt-8 sm:min-h-[1.2em] sm:max-w-none sm:!text-[56px] sm:leading-[100%]">
-              We&apos;ll help you run it with AI.
+              <span className="animate-hero-line-in flex origin-bottom flex-wrap items-baseline justify-center gap-x-[0.25em] text-balance">
+                <span>We&apos;ll help you run it with</span>
+                <span className="relative z-20 inline-block h-[1.12em] origin-center overflow-visible whitespace-nowrap text-left align-baseline">
+                  <span className="invisible inline-block whitespace-nowrap">
+                    AI.
+                  </span>
+                  <span className="animate-ai-blur-in absolute left-0 top-0 inline-block origin-bottom whitespace-nowrap">
+                    AI.
+                  </span>
+                  <span className="pointer-events-none absolute inset-0">
+                    <span
+                      aria-hidden
+                      className="animate-ai-glitch-top absolute inset-0 text-white"
+                      style={{
+                        clipPath: "inset(0px 0px 58%)",
+                        textShadow: "rgba(255, 255, 255, 0.32) 8px 0px 0px",
+                      }}
+                    >
+                      AI.
+                    </span>
+                    <span
+                      aria-hidden
+                      className="animate-ai-glitch-bottom absolute inset-0 text-white"
+                      style={{
+                        clipPath: "inset(48% 0px 0px)",
+                        textShadow: "rgba(255, 255, 255, 0.28) -7px 0px 0px",
+                      }}
+                    >
+                      AI.
+                    </span>
+                  </span>
+                </span>
+              </span>
             </span>
           </h1>
           <div className="mt-8 flex flex-col-reverse items-center justify-center gap-4 sm:mt-10 sm:flex-row sm:gap-x-6 sm:gap-y-3">

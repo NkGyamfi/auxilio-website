@@ -132,3 +132,64 @@
     @apply font-sans;
   }
 }
+
+/* Hero subheading entrance: fade + slide up, with a glitch flourish on "AI" */
+@keyframes hero-line-in {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes ai-blur-in {
+  from {
+    filter: blur(8px);
+  }
+  to {
+    filter: blur(0px);
+  }
+}
+
+@keyframes ai-glitch-top {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  45%,
+  58% {
+    opacity: 1;
+  }
+}
+
+@keyframes ai-glitch-bottom {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50%,
+  63% {
+    opacity: 1;
+  }
+}
+
+.animate-hero-line-in {
+  animation: hero-line-in 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.animate-ai-blur-in {
+  animation: ai-blur-in 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.animate-ai-glitch-top {
+  animation: ai-glitch-top 0.5s ease-in-out both;
+  animation-delay: 0.35s;
+}
+
+.animate-ai-glitch-bottom {
+  animation: ai-glitch-bottom 0.5s ease-in-out both;
+  animation-delay: 0.35s;
+}
